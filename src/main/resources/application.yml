@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: haohao-admin
+  cache:
+    type: redis
+
+mybatis-plus:
+  type-aliases-package: com.haohao.admin.module.*.entity
+  mapper-locations: classpath*:/com.haohao.admin.module.*.mapper/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+
+jwt:
+  header: token
+  prefix: token_
+  expireTime: 60
+  secret: secret
