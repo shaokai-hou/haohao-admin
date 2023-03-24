@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Api(tags = "测试 API")
 @RestController
-@RequestMapping("/api/test")
+@RequestMapping("/test")
 public class TestController {
 }
